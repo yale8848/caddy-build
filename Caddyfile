@@ -1,0 +1,23 @@
+aaa.com {
+
+  log  access.log {
+     rotate_size  1
+     rotate_keep  20
+  }
+  errors error.log {
+  	rotate_size     1
+  	rotate_keep     50
+  }
+  gzip
+  root ./html
+  proxy  /bbb  127.0.0.1:8080
+  redir  /r   http://www.baidu.com
+  # plugins
+  ratelimit get /aaa/test 1 1 second
+  expires {
+     match .css$ 1y
+  }
+  realip {
+      from 1.2.3.4/32
+  }
+}
