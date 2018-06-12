@@ -1,4 +1,4 @@
-# Build caddy with plugins:
+# Build [caddy](https://github.com/mholt/caddy) with plugins:
 
 ## Below plugins are build in
 
