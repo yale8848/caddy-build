@@ -36,7 +36,7 @@
 	_ "github.com/hacdias/caddy-webdav"
 
 ```
- ## Build at 201-6-11
+ ## Download, build at 2018-6-11
  
  [windows-64](windows-64/caddy.exe)
  
